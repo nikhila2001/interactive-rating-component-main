@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+/* CSS RESET */
+*,
+*::after,
+*::before {
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    /* ||COLORS */
+    --ORANGE:hsl(25, 97%, 53%);
+    --WHITE:hsl(0, 0%, 100%);
+    --LIGHT-GRAY:hsl(217, 12%, 63%);
+    --MEDIUM-GRAY:hsl(216, 12%, 54%);
+    --DARK-BLUE:hsl(213, 20%, 18%);
+    --VERY-DARK-BLUE:hsl(216, 12%, 8%);
+
+    /* ||TYPOGRAPHY*/
+    --FS:15px;
+    --FF:'Overpass', sans-serif;
+    --FW1:700;
+    --FW2:400;
+}
+
+body{
+    background-color: var(--VERY-DARK-BLUE);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container{
+    background-color: var(--DARK-BLUE);
+    width:23% ;
+    height: auto;
+    border-radius: 5%;
+    padding: 2.5rem;
+    font-family: var(--FF);
+}
+
+.image {
+    text-align: center;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.button {
+    color: var(--ORANGE);
+    background-color:  hsl(206, 15%, 20%);
+    border: none;
+    border-radius: 500px;
+    font-size: var(--FS);
+    margin-top: 2rem;
+    padding: 0.5rem;
+    display: flex; 
+    width: 13rem;  
+    justify-content: center;
+    
+}
+
+.thnx-msg {
+    color: var(--WHITE);
+    text-align: center;
+    margin-top: 2rem;
+    
+}
+.description {
+    color:var(--LIGHT-GRAY);
+    text-align: center;
+    margin-top: 0.5rem;
+    line-height: 1.5;
+
+}
+
+@media only screen and (max-width:375px) {
+.main-container {
+    width: 90%;
+    height: auto;
+}
+.description {
+    font-size: 0.8em;
+}
+}
